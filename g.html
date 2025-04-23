@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gym Website</title>
+    <link rel="stylesheet" href="ks.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+  
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+  
+    
+    <style>
+        .gym-amenities {
+          padding: 80px 0;
+          background-color: white;
+        }
+      
+        .section-header {
+          margin-bottom: 50px;
+        }
+      
+        .section-header h2 {
+          color: #333;
+          font-size: 36px;
+          padding-top: 2px;
+        }
+      
+        .section-header .lead {
+          color: #666;
+          max-width: 800px;
+          margin: 0 auto;
+          text-align: center;
+        }
+      
+        .amenity-card {
+          margin-bottom: 30px;
+          border-radius: 15px;
+          overflow: hidden;
+          box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+          transition: all 0.3s ease;
+        }
+      
+        .amenity-card:hover {
+          transform: translateY(-10px);
+          box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+        }
+      
+        .amenity-image {
+          position: relative;
+          overflow: hidden;
+          height: 300px;
+        }
+      
+        .amenity-image img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          transition: transform 0.5s ease;
+        }
+      
+        .amenity-card:hover .amenity-image img {
+          transform: scale(1.1);
+        }
+      
+        .overlay {
+          position: absolute;
+          bottom: -100%;
+          left: 0;
+          right: 0;
+          background: rgba(0, 0, 0, 0.8);
+          color: white;
+          padding: 20px;
+          transition: bottom 0.3s ease;
+        }
+      
+        .amenity-card:hover .overlay {
+          bottom: 0;
+        }
+      
+        .overlay h3 {
+          color: orange;
+          font-size: 22px;
+          margin-bottom: 10px;
+        }
+      
+        .overlay p {
+          color: #fff;
+          margin: 0;
+          font-size: 16px;
+        }
+     
+
+      </style>
+</head>
+<body>
+   <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#home">
+          <img src="gym logo.png.jpg" alt="Gym Logo " class="thumbnail rounded">
+        </a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>   
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto me-3">
+            <li class="nav-item">
+              <a class="nav-link" href="k.html">
+                <i class="fas fa-home me-1"></i> Home
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="k.html">
+                <i class="fas fa-dumbbell me-1"></i> Why Join
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="k.html">
+                <i class="fas fa-info-circle me-1"></i> About
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="k.html">
+                <i class="fas fa-envelope me-1"></i> Contact
+              </a>
+            </li>
+          </ul>
+          <a href="kh.html" class="ctm-button px-4" style="color: white; background-color: orangered; border: none; padding: 10px;text-decoration: none;">
+            <i class="fas fa-user-plus me-1"></i> Join Now
+          </a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+    <section class="gym-amenities">
+        <div class="container">
+          <div class="section-header text-center">
+            <h2 style="color: orange;text-align: center;">Gym Amenities</h2>
+            <p class="lead" style="color: black;">Experience our world-class facilities and equipment</p>
+          </div>
+      
+          <div class="row g-4">
+            <div class="col-lg-4 col-md-6">
+              <div class="amenity-card">
+                <div class="amenity-image">
+                  <img src="24s.png" alt="24-Hour Security">
+                  <div class="overlay">
+                    <h3>24-Hour Security</h3>
+                    <p>Safe and secure environment 24/7</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+      
+            <div class="col-lg-4 col-md-6">
+              <div class="amenity-card">
+                <div class="amenity-image">
+                  <img src="g2.png.jpg" alt="Fitness Classes">
+                  <div class="overlay">
+                    <h3>Fitness Classes</h3>
+                    <p>Various group classes for all levels</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+      
+            <div class="col-lg-4 col-md-6">
+              <div class="amenity-card">
+                <div class="amenity-image">
+                  <img src="personaltraniner.png.jpg" alt="Personal Training">
+                  <div class="overlay">
+                    <h3>Personal Training</h3>
+                    <p>Expert guidance for your fitness journey</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+      
+            <div class="col-lg-4 col-md-6">
+              <div class="amenity-card">
+                <div class="amenity-image">
+                  <img src="Modern Equipment.png.jpg" alt="Modern Equipment">
+                  <div class="overlay">
+                    <h3>Modern Equipment</h3>
+                    <p>State-of-the-art fitness equipment</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+      
+            <div class="col-lg-4 col-md-6">
+              <div class="amenity-card">
+                <div class="amenity-image">
+                  <img src="Locker Rooms.png.jpg" alt="Locker Rooms">
+                  <div class="overlay">
+                    <h3>Locker Rooms</h3>
+                    <p>Clean and spacious changing facilities</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+      
+            <div class="col-lg-4 col-md-6">
+              <div class="amenity-card">
+                <div class="amenity-image">
+                  <img src="caro3.png.jpg" alt="Cardio Area">
+                  <div class="overlay">
+                    <h3>Cardio Area</h3>
+                    <p>Extensive cardio equipment selection</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+<footer class="footer-section">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-4 col-md-4 col-sm-12">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Press Release</a></li>
+          <li><a href="#">Employee Wellness</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms & Conditions</a></li>
+          <li><a href="#">Preferred Vendors</a></li>
+          <li><a href="#">Continued Operations, Accessibility, and Maintenance</a></li>
+        </ul>
+      </div>
+
+      <div class="col-lg-4 col-md-4 col-sm-12">
+        <h4>Members</h4>
+        <ul>
+          <li><a href="#">FAQs</a></li>
+          <li><a href="#">Contact Us</a></li>
+          <li><a href="#">Events & Gallery</a></li>
+          <li><a href="#">Get Marathon Ready</a></li>
+        </ul>
+      </div>
+
+      <div class="col-lg-4 col-md-4 col-sm-12">
+        <h4>Follow Us</h4>
+        <div class="socials-icons">
+          <a href="https://www.facebook.com" target="_blank" class="socials-icon"><i class="fab fa-facebook-f"></i> Facebook</a>
+          <a href="https://www.instagram.com" target="_blank" class="socials-icon"><i class="fab fa-instagram"></i> Instagram</a>
+          <a href="https://www.youtube.com" target="_blank" class="socials-icon"><i class="fab fa-youtube"></i> YouTube</a>
+          <a href="https://www.twitter.com" target="_blank" class="socials-icon"><i class="fab fa-twitter"></i> Twitter</a>
+          <a href="https://www.linkedin.com" target="_blank" class="socials-icon"><i class="fab fa-linkedin-in"></i> LinkedIn</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+    
+    
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+  
+  
